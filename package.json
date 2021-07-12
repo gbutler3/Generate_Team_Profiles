@@ -1,0 +1,23 @@
+{
+  "name": "week-10-hw",
+  "version": "1.0.0",
+  "description": "team profile generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbutler3/Generate_Team_Profiles.git"
+  },
+  "author": "grace butler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbutler3/Generate_Team_Profiles/issues"
+  },
+  "homepage": "https://github.com/gbutler3/Generate_Team_Profiles#readme"
+}
