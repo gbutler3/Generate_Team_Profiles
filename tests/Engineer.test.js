@@ -1,7 +1,7 @@
 const Engineer = require("../lib/Engineer")
 
 describe("Engineer class", () => {
-    describe("Engineer insantiation", () =>{
+    describe("Engineer instantiation", () =>{
         it("Should create new Engineer class", () => {
             const obj = new Engineer("Grace", 0, "example@example.com", "GitHubName");
             expect(obj instanceof Engineer).toEqual(true);

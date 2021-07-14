@@ -1,8 +1,7 @@
-// The other three classes will extend `Employee`.
 const Intern = require("../lib/Intern")
 
 describe("Intern class", () => {
-    describe("Intern insantiation", () =>{
+    describe("Intern instantiation", () =>{
         it("Should create new Intern class", () => {
             const obj = new Intern("Grace", 0, "example@example.com", "TWU");
             expect(obj instanceof Intern).toEqual(true);
