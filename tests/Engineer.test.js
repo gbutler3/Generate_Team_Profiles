@@ -1,23 +1,21 @@
-// The other three classes will extend `Employee`.
-const Employee = require("../lib/Employee")
+const Engineer = require("../lib/Engineer")
 
-// In addition to `Employee`'s properties and methods, `Engineer` will also have the following:
+describe("Engineer class", () => {
+    describe("Engineer insantiation", () =>{
+        it("Should create new Engineer class", () => {
+            const obj = new Engineer("Grace", 0, "example@example.com", "GitHubName");
+            expect(obj instanceof Engineer).toEqual(true);
+        });
 
-// * `github`&mdash;GitHub username
-// * `getGithub()`
-// * `getRole()`&mdash;overridden to return `'Engineer'`
+        it("Should return gbutler3 as Github Name ", () => {
+            const obj = new Engineer("Grace", 0, "example@example.com", "gbutler3");
+            expect(obj.getGithub()).toEqual("gbutler3");
+        });
 
-// describe("Engineer class", () => {
-//     describe("Engineer insantiation", () =>{
-//         it("Should create new Engineer class", () => {
-//             const eng = new Engineer("Grace", 0, "example@example.com");
-//             expect(eng instanceof Engineer).toEqual(true);
-//         });
+        it("Should return Engineer as Role ", () => {
+            const obj = new Engineer("Grace", 0, "example@example.com", "gbutler3");
+            expect(obj.getRole()).toEqual("Engineer");
+        });
 
-//         it("Should return Employee as Role", () => {
-//             const eng = new Employee("Grace", 0, "example@example.com");
-//             expect(eng.getRole()).toEqual(true);
-//         });
-
-//     });
-// });
+    });
+});
