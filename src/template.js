@@ -43,7 +43,7 @@ function renderCard(employee){
             <h5 class="card-header">${employee.getName()}<br /><br />${employee.getRole()}</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${employee.getID()} </li>
-                <li class="list-group-item">Email Address:${employee.getEmail()}</li>
+                <li class="list-group-item">Email Address: ${employee.getEmail()}</li>
                 <li class="list-group-item">GitHub: ${employee.getSchool()}</li>
             </ul>
             </div>`
@@ -56,7 +56,7 @@ function renderCard(employee){
             <h5 class="card-header">${employee.getName()}<br /><br />${employee.getRole()}</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${employee.getID()} </li>
-                <li class="list-group-item">Email Address:${employee.getEmail()}</li>
+                <li class="list-group-item">Email Address: ${employee.getEmail()}</li>
                 <li class="list-group-item">Office Phone: ${employee.getOfficeNumber()} </li>
             </ul>
             </div>

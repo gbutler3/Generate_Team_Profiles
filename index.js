@@ -132,7 +132,7 @@ function addIntern (){
 
 
 function createHTML(teamMembers) {
-    fs.writeFileSync("index.html",createPage(teamMembers), "UTF-8")
+    fs.writeFileSync("./dist/index.html",createPage(teamMembers), "UTF-8")
 }
 
 init();

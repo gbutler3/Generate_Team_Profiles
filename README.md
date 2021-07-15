@@ -27,6 +27,6 @@ As a manager of a team, I want to generate a webpage that displays my team's bas
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
-Coming Soon!
+## Demo
 
-<!-- ![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](#) -->
+![screencastify of project running in terminal.](./Screencastify.gif)
