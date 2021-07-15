@@ -1,5 +1,4 @@
 function createHTML(allEmployees){
-    let allCards = '';
     allEmployees.forEach(employee =>{
         allCards += renderCard(employee);
     });

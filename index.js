@@ -131,8 +131,8 @@ function addIntern (){
 };
 
 
-function createHTML() {
-    fs.writeFileSync("./src/template.js",createHTML(allEmployees), "UTF-8")
+function createHTML(teamMembers) {
+    fs.writeFileSync("./src/template.js",createPage(teamMembers), "UTF-8")
 }
 
 init();
