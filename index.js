@@ -34,7 +34,7 @@ function addTeamMember(){
                 addIntern();
                 break;
             case "No more team members":
-                createHTML(); //took this from the templatejs. not sure where to put this yet 
+                createHTML(teamMembers); //took this from the templatejs. not sure where to put this yet 
                 break;
         }
     })
@@ -132,7 +132,7 @@ function addIntern (){
 
 
 function createHTML(teamMembers) {
-    fs.writeFileSync("./src/template.js",createPage(teamMembers), "UTF-8")
+    fs.writeFileSync("index.html",createPage(teamMembers), "UTF-8")
 }
 
 init();

@@ -1,6 +1,8 @@
+let allCards= '';
+
 function createHTML(allEmployees){
     allEmployees.forEach(employee =>{
-        allCards += renderCard(employee);
+         allCards += renderCard(employee);
     });
 
     return `<!DOCTYPE html>
@@ -22,14 +24,14 @@ function createHTML(allEmployees){
 }
 
 function renderCard(employee){
-    switch(employee.gitRole()) {
+    switch(employee.getRole()) {
         case "Engineer":
             return `</div><div class="col-6">
             <div class="card mx-auto mb-3" style="width: 18rem">
-            <h5 class="card-header">${employee.getName()}<br /><br />${employee.gitRole()}</h5>
+            <h5 class="card-header">${employee.getName()}<br /><br />${employee.getRole()}</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${employee.getID()} </li>
-                <li class="list-group-item">Email Address:${employee.getEmail()}</li>
+                <li class="list-group-item">Email Address: ${employee.getEmail()}</li>
                 <li class="list-group-item">GitHub: ${employee.getGithub()}</li>
             </ul>
             </div>`
@@ -38,7 +40,7 @@ function renderCard(employee){
         case "Intern":
             return `</div><div class="col-6">
             <div class="card mx-auto mb-3" style="width: 18rem">
-            <h5 class="card-header">${employee.getName()}<br /><br />${employee.gitRole()}</h5>
+            <h5 class="card-header">${employee.getName()}<br /><br />${employee.getRole()}</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${employee.getID()} </li>
                 <li class="list-group-item">Email Address:${employee.getEmail()}</li>
@@ -51,7 +53,7 @@ function renderCard(employee){
             return `<div class="container">
             <div class="row"><div class="col-6">
             <div class="card mx-auto mb-3" style="width: 18rem">
-            <h5 class="card-header">${employee.getName()}<br /><br />${employee.gitRole()}</h5>
+            <h5 class="card-header">${employee.getName()}<br /><br />${employee.getRole()}</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${employee.getID()} </li>
                 <li class="list-group-item">Email Address:${employee.getEmail()}</li>
