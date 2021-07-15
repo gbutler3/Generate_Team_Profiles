@@ -2,10 +2,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const Employee = require("./lib/Employee");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
+
+const createPage= require("./src/template")
 
 const teamMembers= [];
 
@@ -128,5 +129,10 @@ function addIntern (){
         addTeamMember();
     })
 };
+
+
+function createHTML() {
+    fs.writeFileSync("./src/template.js",createHTML(allEmployees), "UTF-8")
+}
 
 init();
